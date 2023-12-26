@@ -28,15 +28,45 @@ kaunjovi@devbook python-poetry % pipx --version
 
 ## Install poetry
 
+- https://python-poetry.org/docs/
+
 ```
 kaunjovi@devbook python-poetry % pip install poetry
-...
+
 kaunjovi@devbook python-poetry % poetry --version 
 Poetry (version 1.7.1)
 ```    
 
+## Get started with the project 
 
-The word “poetry” itself comes from the Greek word poieo meaning “I create,”
+- Create pyproject.toml file 
+
+```
+kaunjovi@devbook python-poetry % poetry init
+```
+
+- Which python to use 
+
+```
+poetry env use /full/path/to/python 
+poetry env use /usr/local/bin/python3
+```
+
+/Library/Frameworks/Python.framework/Versions/3.12/bin/python3
+/usr/local/bin/python3
+/usr/bin/python3
+
+- Set up poetry to create the venv locally
+- Where does this setting stay ? 
+- Which file ? 
+
+```
+kaunjovi@devbook python-poetry % poetry config virtualenvs.in-project true
+
+```
+
+
+- The word “poetry” itself comes from the Greek word poieo meaning “I create,”
 
 poetry --version
 
@@ -44,11 +74,14 @@ Start a new Python Project. poetry new [package-name] poetry new phone-number-va
 
 TOML files (What are TOML format??)
 
-Which Python is poetry using? Poetry by default just uses the system Python, even if that is not supported by the version specifier in pyproject. toml. Oops. Check this out propoerly.
+Which Python is poetry using? 
+Poetry by default just uses the system Python, even if that is not supported by the version specifier in pyproject. toml. 
+Oops. Check this out propoerly.
 
-Which python to use poetry env use /full/path/to/python poetry env use /usr/local/bin/python3.11
 
-The virtualenv will be created inside the project path and vscode will recognize. poetry config virtualenvs.in-project true
+
+The virtualenv will be created inside the project path and vscode will recognize. 
+poetry config virtualenvs.in-project true
 
 Shows the name of the current environment poetry env list
 
