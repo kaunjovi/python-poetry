@@ -1,5 +1,24 @@
 # python-poetry
 
+# Resources 
+
+- [Real Time Sign Language Detection with Tensorflow Object Detection and Python | Deep Learning SSD](https://www.youtube.com/watch?v=pDXdlXlaCco)
+- Tensorflow for recognizing sign language. Come back to it later. We have the basics to cover yet. 
+- [ML with Python](https://www.freecodecamp.org/learn/machine-learning-with-python/)
+- Tensorflow and stuff. Come back? 
+
+- [Bar Chart Race](https://pypi.org/project/bar-chart-race/)
+- Can we use Bar Chart in any of the office decks / presentations. Is there a D3JS version? Come back to it. 
+- [ML course in JS](https://www.freecodecamp.org/news/learn-machine-leaning-without-libraries-or-frameworks/)
+- Check if AM can have a look at this and create a learning lunch material ? 
+
+- [Course : Scientific Computing with Python](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
+- Give it a try. Share with folks trying to learn Python. 
+
+- [Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python/)
+- Give it a try. Share with folks who might be interested. 
+
+
 # Setup 
 
 ## Setup for ML 
