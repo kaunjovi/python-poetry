@@ -1,30 +1,33 @@
 # python-poetry
 
-## Start 
+# Setup 
+
+## Setup for ML 
+
+- Install pandas and scikit-lear 
 
 ```
-kaunjovi@devbook code % git clone git@github.com:kaunjovi/python-poetry.git
-Cloning into 'python-poetry'...
-remote: Enumerating objects: 4, done.
-remote: Counting objects: 100% (4/4), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (4/4), done.
-kaunjovi@devbook code % cd python-poetry 
-kaunjovi@devbook python-poetry % codium . 
-kaunjovi@devbook python-poetry %
+kaunjovi@devbook python-poetry % poetry add pandas
+...
+kaunjovi@devbook python-poetry % poetry add scikit-learn
+...
 ```
 
-## Opening status 
+- This should give you the following entries in the pyproject.toml 
 
 ```
-kaunjovi@devbook python-poetry % python --version 
-Python 3.10.2
-kaunjovi@devbook python-poetry % pip --version 
-pip 23.3.2 from /Users/kaunjovi/.pyenv/versions/3.10.2/lib/python3.10/site-packages/pip (python 3.10)
-kaunjovi@devbook python-poetry % pipx --version 
-1.3.3
+[tool.poetry.dependencies]
+python = "3.12.1"
+pandas = "^2.1.4"
+scikit-learn = "^1.3.2"
 ```
+
+
+
+# Python functions 
+
+- [Python Functions, lambda, filter, map, reduce](https://pynative.com/python-functions/)
+
 
 ## Install poetry
 
@@ -141,8 +144,3 @@ virtual environment If not set explicitly, poetry by default will create a virtu
 
 The poetry.lock file The file poetry.lock serves as a record of all the exact versions of the dependencies used in a project during installation, removal, or updating of any dependency. It ensures that your project uses the correct versions of dependencies by listing all the packages, their exact versions, and the hashes of their source files. It's important to commit the poetry.lock file to your version control
 
-## Resources
-- https://python-poetry.org/
-- https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1
-- https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2
-- https://www.freecodecamp.org/news/how-to-build-and-publish-python-packages-with-poetry/
